@@ -7,33 +7,48 @@
 <!-- <footer> to describe the header, main content, and footer areas of the page -->
 <!-- The scripts tag links in the supporting JavaScript file, which fills in the current year in the footer. -->
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- set up some preloaders, so the browser knows about them as soon as possible -->
-    <link rel="preload" href="styles/screen.css" as="style" />
-    <link rel="preload" href="scripts/scripts.js" as="script" />
-    <title>Vanilla Web Template | Home</title>
-    <link rel="stylesheet" type="text/css" href="screen.css" media="screen" />
-    <link rel="icon" type="image/x-icon" href="static/favicon.ico" />
-</head>
-<body>
-    <header>
-        <h1>Hello, World!</h1>
-        <h2>Welcome to the vanilla web.</h2>
-    </header>
-    <main>
-        <section>
-            <article>
-                <p>This is a plain vanilla web site, written with good 'ol HTML/CSS/JavaScript.</p>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; <span id="year"></span> Jeffery D. Mitchell</p>
-    </footer>
-    <script src="scripts/scripts.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- set up some preloaders, so the browser knows about them as soon as possible -->
+        <link
+            rel="preload"
+            href="styles/screen.css"
+            as="style"
+            type="text/css"
+            crossorigin="anonymous"
+        />
+        <link rel="preload" href="scripts/scripts.js" as="script" crossorigin />
+        <title>Vanilla Web Template | Home</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="screen.css"
+            media="screen"
+            crossorigin="anonymous"
+        />
+        <link rel="icon" type="image/x-icon" href="static/favicon.ico" />
+    </head>
+    <body>
+        <header>
+            <h1>Hello, World!</h1>
+            <h2>Welcome to the vanilla web.</h2>
+        </header>
+        <main>
+            <section>
+                <article>
+                    <p>
+                        This is a plain vanilla web site, written with good 'ol
+                        HTML/CSS/JavaScript.
+                    </p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; <span id="year"></span> Jeffery D. Mitchell</p>
+        </footer>
+        <script src="scripts/scripts.js"></script>
+    </body>
 </html>
