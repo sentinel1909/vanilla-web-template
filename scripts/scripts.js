@@ -3,7 +3,11 @@
 // the 'use strict' directive enforces stricter parsing and error handling on the code at runtime
 'use strict';
 
-// add the current year to the page footer
-let currentYear = new Date().getFullYear();
-let year = document.getElementById('year');
-year.textContent = currentYear;
+// Add the current year to the page footer in a safe, modular way
+(function updateFooterYear() {
+    const currentYear = new Date().getFullYear();
+    const year = document.getElementById('year');
+    if (year) {
+        year.textContent = currentYear;
+    }
+})();

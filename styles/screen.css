@@ -1,11 +1,58 @@
 /* screen.css */
 
-/* This file contains the CSS styles for the vanilla-web-template */
-/* there is one CSS selector, body, which has two properties, max-width and margin, to limit the screen */
-/* size to a maximum width of 1028 pixels. The margin tag has two values, 0 and auto, which serve to center */
-/* the body tag on the screen. */
+/* CSS Reset for cross-browser consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --max-width: 1028px;
+    --main-bg: #fff;
+    --main-color: #222;
+    --font-family: system-ui, sans-serif;
+}
 
 body {
-    max-width: 1028px;
+    max-width: var(--max-width);
     margin: 0 auto;
+    background: var(--main-bg);
+    color: var(--main-color);
+    font-family: var(--font-family);
+    line-height: 1.6;
+}
+
+header {
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+}
+
+main {
+    padding: 1rem 0;
+}
+
+footer {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Centering utility class for main content */
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+#main-content {
+    /* Optionally, you can use the centered class styles directly here */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
 }
